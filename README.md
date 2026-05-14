@@ -3,7 +3,31 @@ E-commerce
 Laravel 13.*
 PHP 8.3^ or later
 
+composer create-project laravel/laravel ecom-sahed
 
+cd ecom-sahed
+
+composer require laravel/breeze --dev
+
+php artisan breeze:install blade
+
+npm install && npm run dev
+
+php artisan migrate
+
+composer require spatie/laravel-permission
+
+php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvider"
+
+php artisan migrate
+
+composer require laravel/fortify
+
+php artisan fortify:install
+
+php artisan migrate
+
+php artisan optimize:clear
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 

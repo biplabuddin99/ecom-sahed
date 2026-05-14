@@ -18,3 +18,17 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+// Route::middleware(['role:admin'])->group(function () {
+
+//     Route::get('/dashboard', function () {
+//         return 'Admin Dashboard';
+//     });
+
+// });
+// Route::middleware(['permission:user-list'])->group(function () {
+
+//     Route::get('/users', function () {
+//         return 'User List';
+//     });
+
+// });
